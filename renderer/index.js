@@ -47,6 +47,15 @@ module.exports = function(context) {
       context.drawImage(this.backgroundImage, 0, 0, this.options.width, this.options.height);
     }
 
+    if (this.foregroundImage) {
+      context.drawImage(
+        this.foregroundImage, 
+        this.options.width - (20 + this.options.foregroundImageWidth), 
+        this.options.height - (20 + this.options.foregroundImageHeight), 
+        this.options.foregroundImageWidth, 
+        this.options.foregroundImageHeight);
+    }
+
     patterns[this.options.pattern || "wave"](context, this.getWaveform(frameNumber), this.options);
 
     // Write the caption

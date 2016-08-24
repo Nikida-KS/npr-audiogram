@@ -232,22 +232,35 @@ function preloadImages(themes) {
   imageQueue.awaitAll(initialize);
 
   function getImage(theme, cb) {
-
-    if (!theme.backgroundImage) {
+    if (!theme.backgroundImage && !theme.foregroundImage) {
       return cb(null, theme);
     }
 
-    theme.backgroundImageFile = new Image();
-    theme.backgroundImageFile.onload = function(){
-      return cb(null, theme);
-    };
-    theme.backgroundImageFile.onerror = function(e){
-      console.warn(e);
-      return cb(null, theme);
-    };
+    if (theme.backgroundImage) {
+      theme.backgroundImageFile = new Image();
+      theme.backgroundImageFile.onload = function(){
+        return cb(null, theme);
+      };
+      theme.backgroundImageFile.onerror = function(e){
+        console.warn(e);
+        return cb(null, theme);
+      };
 
-    theme.backgroundImageFile.src = "/settings/backgrounds/" + theme.backgroundImage;
+      theme.backgroundImageFile.src = "/settings/backgrounds/" + theme.backgroundImage;
+    }
 
+    if (theme.foregroundImage) {
+      theme.foregroundImageFile = new Image();
+      theme.foregroundImageFile.onload = function(){
+        return cb(null, theme);
+      };
+      theme.foregroundImageFile.onerror = function(e){
+        console.warn(e);
+        return cb(null, theme);
+      };
+
+      theme.foregroundImageFile.src = "/settings/backgrounds/" + theme.foregroundImage;
+    }
   }
 
 }

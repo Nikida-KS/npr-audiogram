@@ -69,7 +69,6 @@ function resize(width, height) {
 }
 
 function redraw() {
-
   resize(theme.width, theme.height);
 
   video.kill();
@@ -77,6 +76,7 @@ function redraw() {
   renderer.update(theme);
   renderer.caption = caption;
   renderer.backgroundImage = theme.backgroundImageFile || null;
+  renderer.foregroundImage = theme.foregroundImageFile || null;
   renderer.drawFrame(0);
 
 }
