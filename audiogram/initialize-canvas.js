@@ -14,24 +14,41 @@ function initializeCanvas(options, cb) {
 
   renderer.caption = options.caption;
 
-  if (!options.backgroundImage) {
+  if (!options.backgroundImage && !options.foregroundImage) {
     return cb(null, renderer);
   }
 
   // Load background image from file (done separately so renderer code can work in browser too)
-  fs.readFile(path.join(__dirname, "..", "settings", "backgrounds", options.backgroundImage), function(err, raw){
+  if (options.backgroundImage) {
+    fs.readFile(path.join(__dirname, "..", "settings", "backgrounds", options.backgroundImage), function(err, raw){
 
-    if (err) {
-      return cb(err);
-    }
+      if (err) {
+        return cb(err);
+      }
 
-    var bg = new Canvas.Image;
-    bg.src = raw;
-    renderer.backgroundImage = bg;
+      var bg = new Canvas.Image;
+      bg.src = raw;
+      renderer.backgroundImage = bg;
 
-    return cb(null, renderer);
+      return cb(null, renderer);
 
-  });
+    });
+  }
+
+  if (options.foregroundImage) {
+    fs.readFile(path.join(__dirname, "..", "settings", "backgrounds", options.foregroundImage), function(err, raw){
+
+      if (err) {
+        return cb(err);
+      }
+
+      var fg = new Canvas.Image;
+      fg.src = raw;
+      renderer.foregroundImage = fg;
+
+      return cb(null, renderer);
+    });
+  }
 
 }
 
