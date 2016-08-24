@@ -6,6 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="js/webfont.js"></script>
+    <script>
+        var urls = [
+            'http://s.npr.org/templates/css/fonts/GothamSSm.css',
+            'http://s.npr.org/templates/css/fonts/Gotham.css',
+            'http://s.npr.org/templates/css/fonts/Knockout.css'
+        ];
+        if (window.location.protocol == "https:") {
+            urls = [
+                'https://secure.npr.org/templates/css/fonts/GothamSSm.css',
+                'https://secure.npr.org/templates/css/fonts/Gotham.css',
+                'https://secure.npr.org/templates/css/fonts/Knockout.css'
+            ];
+        }
+        WebFont.load({
+             custom: {
+                 families: [
+                     'Gotham SSm:n4,n7',
+                     'Gotham:n4,n7',
+                     'Knockout 31 4r:n4'
+                 ],
+                 urls: urls
+             },
+             timeout: 10000
+        });
+    </script>
+
     <link href="css/base.css" rel="stylesheet" type="text/css">
     <link href="css/editor.css" rel="stylesheet" type="text/css">
   </head>
