@@ -22,10 +22,10 @@ module.exports = {
   workingDirectory: path.join(__dirname, "..", "tmp"),
   storagePath: path.join(__dirname, "..", "media"),
   fonts: [
-    { family: "Source Sans Pro", file: path.join(__dirname, "fonts", "SourceSansPro-Regular.ttf") },
-    { family: "Source Sans Pro", file: path.join(__dirname, "fonts", "SourceSansPro-Light.ttf"), weight: 300 },
-    { family: "Source Sans Pro", file: path.join(__dirname, "fonts", "SourceSansPro-Bold.ttf"), weight: "bold" },
-    { family: "Source Sans Pro", file: path.join(__dirname, "fonts", "SourceSansPro-Italic.ttf"), style: "italic" },
-    { family: "Source Sans Pro", file: path.join(__dirname, "fonts", "SourceSansPro-BoldItalic.ttf"), weight: "bold", style: "italic" }
+    { family: "Gotham", file: path.join(__dirname, "fonts", "Gotham-Book.ttf") },
+    { family: "Gotham", file: path.join(__dirname, "fonts", "Gotham-Light.ttf"), weight: 300 },
+    { family: "Gotham", file: path.join(__dirname, "fonts", "Gotham-Bold.ttf"), weight: "bold" },
+    { family: "Gotham", file: path.join(__dirname, "fonts", "Gotham-BookItalic.ttf"), style: "italic" },
+    { family: "Gotham", file: path.join(__dirname, "fonts", "Gotham-BoldItalic.ttf"), weight: "bold", style: "italic" }
   ]
 };
