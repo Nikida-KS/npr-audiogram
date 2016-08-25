@@ -27,7 +27,7 @@ var getSeamusId = function(titleString) {
     // If you search with an one.npr.org URL, you'll get two IDs back. We want the second one ($matches[1]).
     var pattern = /([0-9]{5,9})/g;
     var matches = pattern.exec(titleString);
-    seamusId = matches[1];
+    seamusId = matches[0];
     return seamusId;
   } else if (titleString.includes(" | ")) {
     // If you search and select a story, its title will be {title in text} | {storyId}

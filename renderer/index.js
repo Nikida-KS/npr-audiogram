@@ -23,6 +23,18 @@ module.exports = function(context) {
     if (typeof options.waveLeft !== "number") options.waveLeft = 0;
     if (typeof options.waveRight !== "number") options.waveRight = options.width;
 
+    if (typeof options.foregroundImage !== 'undefined') {
+      // Foreground Image Height and Width Settings
+      if (typeof options.foregroundImageHeight !== "number") options.foregroundImageHeight = 200;
+      if (typeof options.foregroundImageWidth !== "number") options.foregroundImageHeight = 200;
+
+      // Foreground Image Location Settings
+      if (typeof options.foregroundImageTop !== "number") options.foregroundImageTop = options.height - (20 + options.foregroundImageHeight);
+      if (typeof options.foregroundImageBottom !== "number") options.foregroundImageBottom = options.height - 20;
+      if (typeof options.foregroundImageLeft !== "number") options.foregroundImageLeft = options.width - (20 + options.foregroundImageWidth);
+      if (typeof options.foregroundImageRight !== "number") options.foregroundImageRight = options.width - 20;
+    }
+
     this.wrapText = textWrapper(context, options);
     this.options = options;
     this.waveform = options.waveform || [sample.slice(0, options.samplesPerFrame)];
@@ -49,10 +61,10 @@ module.exports = function(context) {
 
     if (this.foregroundImage) {
       context.drawImage(
-        this.foregroundImage, 
-        this.options.width - (20 + this.options.foregroundImageWidth), 
-        this.options.height - (20 + this.options.foregroundImageHeight), 
-        this.options.foregroundImageWidth, 
+        this.foregroundImage,
+        this.options.foregroundImageLeft,
+        this.options.foregroundImageTop,
+        this.options.foregroundImageWidth,
         this.options.foregroundImageHeight);
     }
 

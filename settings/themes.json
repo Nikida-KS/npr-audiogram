@@ -18,10 +18,7 @@
   "News": {
     "backgroundColor": "#fff",
     "waveColor": "#6d8ac4",
-    "foregroundColor": "black",
-    "foregroundImage": "npr.png",
-    "foregroundImageWidth": 200,
-    "foregroundImageHeight": 68
+    "foregroundColor": "black"
   },
   "Hidden Brain": {
     "backgroundColor": "#1D3161",
@@ -30,5 +27,28 @@
     "foregroundImage": "hidden-brain.png",
     "foregroundImageWidth": 200,
     "foregroundImageHeight": 200
+  },
+  "Hidden Brain Masked": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "white",
+    "waveColor": "#0A97AD",
+    "foregroundColor": "white",
+    "foregroundImage": "HB_option4.png",
+    "foregroundImageWidth": 1280,
+    "foregroundImageHeight": 720,
+    "foregroundImageLeft": 0,
+    "foregroundImageTop": 0,
+    "waveTop": 260,
+    "waveBottom": 480,
+    "waveLeft": 870,
+    "waveRight": 1220,
+    "captionTop": 240,
+    "captionFont": "300 52px 'Gotham'",
+    "captionLineHeight": 52,
+    "captionLineSpacing": 7,
+    "captionLeft": 40,
+    "captionRight": 810,
+    "captionAlign": "left"
   }
 }
