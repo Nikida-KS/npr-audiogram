@@ -4,6 +4,8 @@
     <title>Audiogram</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -51,6 +53,18 @@
         <div class="row form-row" id="row-audio">
           <label for="input-audio">Audio</label>
           <input id="input-audio" name="audio" type="file" />
+        </div>
+
+        <form class="form-container" role="form" id="seamus_audio_form" method="get">
+          <div class="row form-row" id="row-seamus_audio remote">
+            <label for="seamus_audio">Or search for a story</label>
+            <input id="storySearch" class="tt-query form-control" name="seamus_audio" type="text" autocomplete="off" spellcheck="false">
+            </br>
+            <button type="submit" id="form-submit">Find Audio</button>
+          </div>
+        </form>
+        <div class="audioUrl">
+
         </div>
         <div class="row form-row" id="row-theme">
           <label for="input-theme">Theme</label>
@@ -117,6 +131,9 @@
         </div>
       </div><!-- #loaded -->
     </div><!-- .container -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
     <script src="js/bundle.js"></script>
+    <script src="js/seamus-search.js"></script>
   </body>
 </html>

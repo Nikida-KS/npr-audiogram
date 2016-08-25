@@ -3,6 +3,8 @@ node_modules/
 .env
 tmp/
 editor/js/*
+# Don't ignore the NPR API integration JS file.
+!editor/js/seamus-search.js
 junk/
 media/
 *.log
