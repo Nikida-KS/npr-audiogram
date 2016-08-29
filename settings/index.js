@@ -23,6 +23,8 @@ module.exports = {
   storagePath: path.join(__dirname, "..", "media"),
   redisHost: "127.0.0.1",
   worker: true,
+  s3Bucket: 'stage-apps.npr.org',
+  storagePath: 'audiogram',
   fonts: [
     { family: "Gotham", file: path.join(__dirname, "fonts", "Gotham-Book.ttf") },
     { family: "Gotham", file: path.join(__dirname, "fonts", "Gotham-Light.ttf"), weight: 300 },
