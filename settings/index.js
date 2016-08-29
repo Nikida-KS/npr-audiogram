@@ -21,7 +21,7 @@ var path = require("path");
 module.exports = {
   workingDirectory: path.join(__dirname, "..", "tmp"),
   storagePath: path.join(__dirname, "..", "media"),
-  s3Bucket: 'apps.npr.org',
+  s3Bucket: 'stage-apps.npr.org',
   storagePath: 'audiogram-videos',
   fonts: [
     { family: "Gotham", file: path.join(__dirname, "fonts", "Gotham-Book.ttf") },
