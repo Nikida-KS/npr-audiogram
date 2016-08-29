@@ -15,15 +15,6 @@
     "captionLeft": 200,
     "captionRight": 1080
   },
-  "News": {
-    "backgroundColor": "#fff",
-    "waveColor": "#6d8ac4",
-    "foregroundColor": "black",
-    "foregroundImage": "npr.png",
-    "captionFont": "700 52px 'Gotham'",
-    "foregroundImageWidth": 200,
-    "foregroundImageHeight": 68
-  },
   "Hidden Brain Masked": {
     "width": 1280,
     "height": 720,
