@@ -150,7 +150,7 @@
     "waveColor": "white",
     "waveTop": 670,
     "waveBottom": 770,
-    "waveLeft": 500,
+    "waveLeft": 0,
     "waveRight": 1280,
     "captionTop": 200,
     "captionFont": "400 52px 'Gotham'",
