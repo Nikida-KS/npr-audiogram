@@ -254,5 +254,43 @@
     "captionLeft": 60,
     "captionRight": 940,
     "captionAlign": "left"
+  },
+  "Ask Me Another Option 1": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "white",
+    "backgroundImage": "NPR_AMA_Audiogram_Banner.png",
+    "foregroundColor": "white",
+    "waveColor": "#f05134",
+    "waveTop": 520,
+    "waveBottom": 700,
+    "waveLeft": 0,
+    "waveRight": 1280,
+    "captionTop": 340,
+    "captionFont": "700 52px 'Gotham'",
+    "captionLineHeight": 52,
+    "captionLineSpacing": 7,
+    "captionLeft": 60,
+    "captionRight": 1220,
+    "captionAlign": "left"
+  },
+  "Ask Me Another Option 2": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "white",
+    "backgroundImage": "NPR_AMA_Audiogram_Banner_2.png",
+    "foregroundColor": "#727272",
+    "waveColor": "#727272",
+    "waveTop": 520,
+    "waveBottom": 700,
+    "waveLeft": 0,
+    "waveRight": 1280,
+    "captionTop": 340,
+    "captionFont": "700 52px 'Gotham'",
+    "captionLineHeight": 52,
+    "captionLineSpacing": 7,
+    "captionLeft": 60,
+    "captionRight": 1220,
+    "captionAlign": "left"
   }
 }
