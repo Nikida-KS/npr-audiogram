@@ -42,7 +42,21 @@
   <body class="loading">
     <div class="container">
       <h1>Audiogram (Beta)</h1>
-      <p>This is experimental software for exploring social audio. At present, it's intended for use only by selected podcast channels. It is not intended for newsroom-wide use. Questions? Contact <a href="mailto:mpiard@npr.org">Mathilde Piard.</a></p>
+      <p>This is experimental software for promoting social audio. It's intended for use only by selected podcasts, programs and news desks. If you are interesting in having a theme developed for your team, or if you need a theme removed, please email Stacey Goers (sgoers@npr.org) and she'll coordinate with Visuals and Online Tech.</p>
+      </br>
+      <p>Additionally, if you need to report a bug or have a feature suggestion, please also contact <a href="mailto:sgoers@npr.org">Stacey Goers</a>.</p>
+      </br>
+      <p>Basic instructions for use:</p>
+      <ul>
+        <li>&nbsp; &#8226; &nbsp; Remove music tracks from your layup (audiograms do not include music).</li>
+        <li>&nbsp; &#8226; &nbsp; Audiograms should be as brief as possible (60 seconds max).</li>
+        <li>&nbsp; &#8226; &nbsp; Audiograms should be WAV format files. </li>
+        <li>&nbsp; &#8226; &nbsp; Please copy edit your text closely.</li>
+        <li>&nbsp; &#8226; &nbsp; Once you've created one audiogram, refresh the tool in your browser to create another.</li>
+        <li>&nbsp; &#8226; &nbsp; Detailed instructions, using How I Built This as an example, can be found <a href="http://media.npr.org/audiogram/instructions.pdf">here</a>.</li>
+      </ul>
+      </br>
+      <hr>
       <div id="loading">
         <div id="loading-bars">
           <div class="r1"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
@@ -56,17 +70,6 @@
           <input id="input-audio" name="audio" type="file" />
         </div>
 
-        <form class="form-container" role="form" id="seamus_audio_form" method="get">
-          <div class="row form-row" id="row-seamus_audio remote">
-            <label for="seamus_audio">Or search for a story</label>
-            <input id="storySearch" class="tt-query form-control" name="seamus_audio" type="text" autocomplete="off" spellcheck="false">
-            </br>
-            <button type="submit" id="form-submit">Find Audio</button>
-          </div>
-        </form>
-        <div class="audioUrl">
-
-        </div>
         <div class="row form-row" id="row-theme">
           <label for="input-theme">Theme</label>
           <select id="input-theme" name="theme"></select>
