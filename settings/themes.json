@@ -99,25 +99,6 @@
     "captionRight": 900,
     "captionAlign": "left"
   },
-  "Politics Ballot Box": {
-    "width": 1280,
-    "height": 720,
-    "backgroundColor": "white",
-    "backgroundImage": "politics_ballot_box.png",
-    "foregroundColor": "white",
-    "waveColor": "white",
-    "waveTop": 570,
-    "waveBottom": 670,
-    "waveLeft": 0,
-    "waveRight": 1280,
-    "captionTop": 260,
-    "captionFont": "700 52px 'Gotham'",
-    "captionLineHeight": 52,
-    "captionLineSpacing": 7,
-    "captionLeft": 360,
-    "captionRight": 1220,
-    "captionAlign": "left"
-  },
   "How I Built This Option 1": {
     "width": 1280,
     "height": 720,
@@ -210,6 +191,26 @@
     "captionLineHeight": 52,
     "captionLineSpacing": 7,
     "captionLeft": 60,
+    "captionRight": 1220,
+    "captionAlign": "left"
+  },
+  "Up First": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#808083",
+    "backgroundImage": "upfirst_plain.png",
+    "waveColor": "#808083",
+    "foregroundColor": "#545750",
+    "waveTop": 520,
+    "waveBottom": 700,
+    "waveLeft": 0,
+    "waveRight": 1280,
+    "captionTop": 280,
+    "captionFont": "700 64px 'Gotham'",
+    "captionLineSpacing": 125,
+    "captionLineHeight": 52,
+    "captionLineSpacing": 7,
+    "captionLeft": 80,
     "captionRight": 1220,
     "captionAlign": "left"
   }
