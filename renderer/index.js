@@ -72,8 +72,13 @@ module.exports = function(context) {
 
     // Write the caption
     if (this.options.timedCaptions) {
-      this.wrapText(captions(this.options, frameNumber));
+        this.wrapText(captions(this.options, frameNumber));
     }
+    // This is the old caption thing; it's now just used for previews
+    if (this.caption && !this.options.timedCaptions) {
+        this.wrapText(this.caption);
+    }
+
 
     return this;
 

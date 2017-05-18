@@ -150,7 +150,7 @@ function initialize(err, themesWithImages) {
   d3.select("#input-theme").each(updateTheme);
 
   // Get initial caption (e.g. back button)
-  d3.select("#input-caption").on("change keyup", updateCaption).each(updateCaption);
+  d3.select(".input-caption-text").on("change keyup", updateCaption).each(updateCaption);
 
   // Space bar listener for audio play/pause
   d3.select(document).on("keypress", function(){
