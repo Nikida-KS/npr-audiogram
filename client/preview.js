@@ -2,6 +2,7 @@ var d3 = require("d3"),
     audio = require("./audio.js"),
     video = require("./video.js"),
     minimap = require("./minimap.js"),
+    captions = require("../renderer/captions.js"),
     getWaveform = require("./waveform.js");
 
 var context = d3.select("canvas").node().getContext("2d");

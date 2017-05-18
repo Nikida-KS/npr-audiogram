@@ -51,6 +51,19 @@ function submitted() {
     end: selection.end
   });
 
+  var timedCaptions = [];
+  $(".input-caption-text").each(function(index, elem) {
+    timedCaptions.push(
+      {
+        "time": $(".input-caption-time").eq(index).val(),
+        "text": $(elem).val()
+      }
+    );
+  });
+
+  settings.timedCaptions = timedCaptions;
+
+
   delete settings.backgroundImageFile;
 
   formData.append("audio", file);
@@ -137,7 +150,7 @@ function initialize(err, themesWithImages) {
   d3.select("#input-theme").each(updateTheme);
 
   // Get initial caption (e.g. back button)
-  d3.select("#input-caption").on("change keyup", updateCaption).each(updateCaption);
+  d3.select(".input-caption-text").on("change keyup", updateCaption).each(updateCaption);
 
   // Space bar listener for audio play/pause
   d3.select(document).on("keypress", function(){

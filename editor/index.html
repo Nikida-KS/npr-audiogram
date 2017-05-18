@@ -74,12 +74,34 @@
           <label for="input-theme">Theme</label>
           <select id="input-theme" name="theme"></select>
         </div>
-        <div class="row form-row" id="row-caption">
+        <div class="row form-row captions" id="row-caption">
           <label for="input-caption">
             Caption
             <div class="note">Add two spaces in a row to force a line break.</div>
+            <div class="row">
+              <div class="col-60 hide-until-captions-added caption-text">
+                <h5>Text</h5>
+              </div>
+              <div class="col-20 hide-until-captions-added caption-time">
+                <h5>Time (s)</h5>
+              </div>
+            </div>
+            <div class="row" id="captions">
+              <div class="specific-caption">
+                <div class="col-60 caption-text">
+                  <input class="input-caption-text" type="text" autocomplete="off" placeholder="Enter caption" />
+                </div>
+                <div class="col-20 hide-until-captions-added caption-time">
+                  <input class="input-caption-time" type="text" autocomplete="off" value="0" />
+                </div>
+                <div class="col-20 hide-until-captions-added">
+                  <div class="delete-caption"><h5>X<h5></div>
+                </div>
+              </div>
+            </div>
           </label>
-          <input id="input-caption" name="caption" type="text" autocomplete="off" placeholder="Add a caption" />
+          <!-- <input id="input-caption" name="caption" type="text" autocomplete="off" placeholder="Add a caption" /> -->
+          <button type="button" id="add-more-captions">Add more captions</button>
         </div>
         <div id="preview">
           <div style="background-color: black;">
@@ -139,5 +161,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
     <script src="js/bundle.js"></script>
     <script src="js/seamus-search.js"></script>
+    <script src="js/timed-captions.js"></script>
   </body>
 </html>

@@ -3,11 +3,14 @@ node_modules/
 .env
 tmp/
 editor/js/*
-# Don't ignore the NPR API integration JS file.
+# Don't ignore the NPR API integration JS file or the timed caption stuff
 !editor/js/seamus-search.js
+!editor/js/timed-captions.js
 junk/
 media/
 *.log
 .jobs
 settings/fonts/*.ttf
 settings/backgrounds/*.png
+jobs/
+.idea/
