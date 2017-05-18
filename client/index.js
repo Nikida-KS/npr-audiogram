@@ -51,10 +51,25 @@ function submitted() {
     end: selection.end
   });
 
+  var timedCaptions = [];
+  $(".input-caption-text").each(function(index, elem) {
+    timedCaptions.push(
+      {
+        "time": $(".input-caption-time").eq(index).val(),
+        "text": $(elem).val()
+      }
+    );
+  });
+
+  settings.timedCaptions = timedCaptions;
+
+
   delete settings.backgroundImageFile;
 
   formData.append("audio", file);
   formData.append("settings", JSON.stringify(settings));
+
+  debugger;
 
   setClass("loading");
   d3.select("#loading-message").text("Uploading audio...");
