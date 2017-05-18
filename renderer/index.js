@@ -1,6 +1,7 @@
 var d3 = require("d3"),
     patterns = require("./patterns.js"),
     sample = require("./sample-wave.js"),
+    captions = require("./captions.js"),
     textWrapper = require("./text-wrapper.js");
 
 module.exports = function(context) {
@@ -12,7 +13,6 @@ module.exports = function(context) {
   renderer.context = context;
 
   renderer.update = function(options) {
-
     // TODO cleaner defaults
     options.backgroundColor = options.backgroundColor || "#fff";
     options.waveColor = options.waveColor || options.foregroundColor || "#000";
@@ -71,8 +71,8 @@ module.exports = function(context) {
     patterns[this.options.pattern || "wave"](context, this.getWaveform(frameNumber), this.options);
 
     // Write the caption
-    if (this.caption) {
-      this.wrapText(this.caption);
+    if (this.options.timedCaptions) {
+      this.wrapText(captions(this.options, frameNumber));
     }
 
     return this;

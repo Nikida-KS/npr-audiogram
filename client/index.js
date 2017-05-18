@@ -69,8 +69,6 @@ function submitted() {
   formData.append("audio", file);
   formData.append("settings", JSON.stringify(settings));
 
-  debugger;
-
   setClass("loading");
   d3.select("#loading-message").text("Uploading audio...");
 
