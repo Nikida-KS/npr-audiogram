@@ -180,7 +180,7 @@ canvas,audio,svg {
 }
 
 .delete-caption {
-    background-color: red;
+    background-color: #f15c22;
     height: 30px;
     width: 30px;
     text-align: center;

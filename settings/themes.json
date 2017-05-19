@@ -289,5 +289,24 @@
     "captionLeft": 60,
     "captionRight": 1220,
     "captionAlign": "left"
+  },
+  "Invisibilia": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "white",
+    "backgroundImage": "invisibilia-BLANK.png",
+    "foregroundColor": "white",
+    "waveColor": "white",
+    "waveTop": 520,
+    "waveBottom": 700,
+    "waveLeft": 0,
+    "waveRight": 1280,
+    "captionTop": 200,
+    "captionFont": "700 64px 'Gotham'",
+    "captionLineHeight": 52,
+    "captionLineSpacing": 15,
+    "captionLeft": 60,
+    "captionRight": 1220,
+    "captionAlign": "left"
   }
 }
