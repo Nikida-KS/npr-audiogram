@@ -75,6 +75,18 @@ app.use("/settings/", function(req, res, next) {
 
 }, express.static(path.join(__dirname, "..", "settings")));
 
+// Serve audiogram-related assets statically
+app.use("/assets/", function(req, res, next) {
+
+  // Limit to instructions at this point
+  if (req.url.match(/instructions\.pdf/i)) {
+    return next();
+  }
+
+  return res.status(404).send("Cannot GET " + path.join("/assets", req.url));
+
+}, express.static(path.join(__dirname, "..", "assets")));
+
 // Serve editor files statically
 app.use(express.static(path.join(__dirname, "..", "editor")));
 
